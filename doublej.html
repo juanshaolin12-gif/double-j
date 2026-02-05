@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Double J – Action Figures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonte estilosa -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #111, #000);
+      color: #e5e5e5;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 4px;
+      color: #e11d48;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      max-width: 1400px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .side {
+      background: linear-gradient(180deg, #111, #0a0a0a);
+      border: 1px solid #222;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .side h3 {
+      color: #e11d48;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .side p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .main h2 {
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 2px;
+      border-left: 4px solid #e11d48;
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 14px;
+      padding: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(225, 29, 72, 0.25);
+    }
+
+    .placeholder {
+      background: linear-gradient(135deg, #222, #111);
+      height: 260px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    /* BOTÃO WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: #000;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      font-size: 14px;
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5b;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>DOUBLE J</h1>
+    <p>
+      Action figures artesanais em resina, pintura manual de alto nível e base temática.
+      Estilo anime, geek e fantasia com estética dark e agressiva.
+    </p>
+  </header>
+
+  <section class="layout">
+
+    <div class="side">
+      <h3>ARTESANAL</h3>
+      <p>
+        Produção manual, impressão 3D em resina cinza, acabamento detalhado
+        e pintura feita peça por peça.
+      </p>
+    </div>
+
+    <div class="main">
+      <h2>SURVIVAL LEGACY SERIES</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="placeholder">Leon S. Kennedy</div>
+          <p>Inspirado em Resident Evil, com base temática exclusiva.</p>
+        </div>
+
+        <div class="card">
+          <div class="placeholder">Ada Wong</div>
+          <p>Figura feminina elegante e letal, da mesma linha.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="side">
+      <h3>EDIÇÃO LIMITADA</h3>
+      <p>
+        Peças produzidas sob encomenda, pensadas para colecionadores exigentes
+        e fãs de universos icônicos.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    © Double J — Fan art artesanal · Produto não oficial
+  </footer>
+
+  <!-- BOTÃO WHATSAPP -->
+  <a class="whatsapp"
+     href="https://wa.me/5519981952032"
+     target="_blank">
+     Fale comigo no WhatsApp
+  </a>
+
+</body>
+</html>
